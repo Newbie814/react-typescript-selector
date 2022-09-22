@@ -1,8 +1,21 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import { Select } from './Select';
+
+const options = [
+  { label: 'first', value: 1 },
+  { label: 'second', value: 2 },
+  { label: 'third', value: 3 },
+  { label: 'fourth', value: 4 },
+  { label: 'fifth', value: 5 },
+];
 
 function App() {
-  return <h1>Hi</h1>;
+  return (
+    <>
+      <Select options={options} onChange={() => {}} />
+    </>
+  );
 }
 
 export default App;
