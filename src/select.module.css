@@ -28,3 +28,93 @@
   padding: 0;
   font-size: 1.25em;
 }
+
+.clear-btn {
+  background: none;
+  color: #7d7d7e;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+  color: #4b4b4b;
+}
+
+.divider {
+  background-color: #7d7d7e;
+  width: 0.05em;
+  align-self: stretch;
+}
+
+.caret {
+  translate: 0 25%;
+  border: 0.23em solid transparent;
+  border-top-color: #7d7d7e;
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #7d7d7e;
+  border-radius: 0.25em;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.5em);
+  background-color: white;
+  z-index: 100;
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #8fdaff;
+}
+
+.option.highlighted {
+  background-color: #00aaff;
+  color: white;
+}
+
+.option-badge {
+  display: flex;
+  align-items: center;
+  border: 0.05em solid #7d7d7e;
+  border-radius: 0.25em;
+  padding: 0.15em 0.25em;
+  gap: 0.25em;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.option-badge:hover,
+.option-badge:focus {
+  background-color: #f5adad;
+  border-color: #aa0e0e;
+}
+
+.option-badge:hover > .remove-btn,
+.option-badge:focus > .remove-btn {
+  color: #aa0e0e;
+}
+
+.option-badge > .remove-btn {
+  font-size: 1.25em;
+  color: #7d7d7e;
+}

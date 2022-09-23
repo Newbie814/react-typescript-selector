@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+
 import { Select } from './Select';
 
 const options = [
@@ -11,9 +11,11 @@ const options = [
 ];
 
 function App() {
+  const [value, setValue] = useState<typeof options[0] | undefined>(options[0]);
+
   return (
     <>
-      <Select options={options} onChange={() => {}} />
+      <Select options={options} onChange={(o) => setValue(o)} value={value} />
     </>
   );
 }
