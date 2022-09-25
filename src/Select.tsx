@@ -68,6 +68,7 @@ export function Select({ multiple, value, onChange, options }: SelectProps) {
                   e.stopPropagation();
                   selectOption(v);
                 }}
+                className={styles['option-badge']}
               >
                 {v.label}
                 <span className={styles['remove-btn']}>&times;</span>
